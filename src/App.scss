@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  height: 1000px;
+
+  .itemBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      width: 200px;
+    }
+    .textBox {
+      padding: 20px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    background-color: red;
+    .itemBox {
+      flex-direction: column;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
